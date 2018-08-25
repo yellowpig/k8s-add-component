@@ -10,8 +10,7 @@
 2.二次开发时注意原代码的命名规则     
 3.AngularJs的自定义组件用法：在html中由'-'连接，在js中由驼峰表示法声明     
 ```html
-<kd-actionbar-redetail-buttons resource-kind-name="[[Pod|Label 'Pod' which appears at the top of the delete dialog, opened from a pod details page.]]"  type-meta="$ctrl.details.typeMeta"  object-meta="$ctrl.details.objectMeta">
-</kd-actionbar-redetail-buttons>
+<kd-actionbar-redetail-buttons ...></kd-actionbar-redetail-buttons>
 ```
 ```javascript
 export default angular
