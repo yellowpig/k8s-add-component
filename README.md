@@ -2,10 +2,12 @@
 改动k8s/dashbaord源码，为项目添加自定义组件
 
 ## 添加纪录
-8.25 【容器组】将删除按钮改为重启按钮     
-添加组件actionbarreDetailButtonsComponent、actionbarRestartItemComponent     
-8.26 【容器组】将删除dialog改为重启dialog    
+8.25 【容器组-详情】将删除按钮改为重启按钮     
+添加组件actionbarRedetailButtonsComponent、actionbarRestartItemComponent     
+8.26 【容器组-详情】将删除dialog改为重启dialog    
 添加资源restartresource    
+8.26 【容器组】将resourcecard中最后一列操作的删除按钮改为重启按钮     
+添加组件resourceCardRestartMenuItemComponent
 
 ## 技术难点
 1.国际化文件修改容易出错     
