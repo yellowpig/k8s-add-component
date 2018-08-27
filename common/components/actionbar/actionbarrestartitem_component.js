@@ -50,7 +50,7 @@ export class ActionbarRestartItemController {
    */
   remove() {
     this.kdResourceVerberService_
-        .showDeleteDialog(this.resourceKindName, this.typeMeta, this.objectMeta)
+        .showRestartDialog(this.resourceKindName, this.typeMeta, this.objectMeta)
         .then(() => {
           let parentStateName =
               this.kdBreadcrumbsService_.getParentStateName(this.state_['$current']);
