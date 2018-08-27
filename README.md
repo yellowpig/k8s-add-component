@@ -29,3 +29,18 @@ export default angular
 ```
 4.AngularJs的一次性绑定命令{{::$ctrl.namespace}}     
 5.源码中的dialog是作为服务注入的，展示在页面的button是组件     
+6.resourcard组件和子组件的组织方式
+不同页面用到的组件相同时，可以像actionbar组件一般，直接把子组件封装在actionbar中，页面调用actionbar即可。      
+不同页面用到resourcecard组件时，会包含很多不同组合的小组件。所以把父组件、子组件分别注册成.component，页面调用时用标签嵌套的方式实现不同子组件的组合   
+```html
+    <kd-resource-card-column class="kd-row-layout-column kd-icon-column">
+      <kd-logs-button object-meta="::$ctrl.pod.objectMeta" resource-kind-name="::$ctrl.pod.typeMeta.kind">
+      </kd-logs-button>
+      <kd-resource-card-menu>
+        <kd-resource-card-restart-menu-item resource-kind-name="[[Pod|Name of the pod resource]]">
+        </kd-resource-card-restart-menu-item>
+        <kd-resource-card-edit-menu-item resource-kind-name="[[Pod|Name of the pod resource]]">
+        </kd-resource-card-edit-menu-item>
+      </kd-resource-card-menu>
+    </kd-resource-card-column>
+```
